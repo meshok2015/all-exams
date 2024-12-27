@@ -1,0 +1,13 @@
+﻿<Window x:Class="ImageFileViewer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Image File Viewer" Height="450" Width="800">
+    <Grid>
+        <ListBox x:Name="FileListBox" Margin="10" SelectionChanged="FileListBox_SelectionChanged"/>
+        <Button Content="Load Files" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,260,0,0" Click="LoadFiles_Click"/>
+        <Button Content="Save Files" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,300,0,0" Click="SaveFiles_Click"/>
+        <Button Content="Delete Selected" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,340,0,0" Click="DeleteSelected_Click"/>
+        <Button Content="Load List" Width="100" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,380,0,0" Click="LoadList_Click"/>
+        <Image x:Name="ImageViewer" Margin="164,167,10,0" VerticalAlignment="Top" Height="233" />
+    </Grid>
+</Window>

@@ -1,0 +1,40 @@
+﻿<Window x:Class="TextEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Text Editor" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Меню -->
+        <Menu Grid.Row="0">
+            <MenuItem Header="File">
+                <MenuItem Header="Open" Click="OpenFile_Click" />
+                <MenuItem Header="Save" Click="SaveFile_Click" />
+                <Separator />
+                <MenuItem Header="Exit" Click="Exit_Click" />
+            </MenuItem>
+            <MenuItem Header="Recent Files">
+                <MenuItem x:Name="RecentFilesMenuItem" Header="No recent files" />
+                <!-- Кнопка для очистки списка недавних файлов -->
+                <MenuItem Header="Clear Recent Files" Click="ClearRecentFiles_Click"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- Основной текстовый редактор -->
+        <TextBox x:Name="EditorTextBox" Grid.Row="1" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" />
+
+        <!-- Панель инструментов -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="5">
+            <Button Content="Word Count" Click="WordCount_Click" Margin="5" />
+            <TextBlock x:Name="WordCountTextBlock" VerticalAlignment="Center" Margin="5" />
+
+            <TextBox x:Name="FindTextBox" Width="150" Margin="5" />
+            <TextBox x:Name="ReplaceTextBox" Width="150" Margin="5" />
+            <Button Content="Replace" Click="ReplaceText_Click" Margin="5" />
+        </StackPanel>
+    </Grid>
+</Window>

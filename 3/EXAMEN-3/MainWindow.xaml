@@ -1,0 +1,45 @@
+﻿<Window x:Class="EXAMEN_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:oxy="http://oxyplot.org/wpf"
+        mc:Ignorable="d"
+        Title="Function Plotter" Height="600" Width="1000">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="3*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="3*" />
+        </Grid.RowDefinitions>
+
+        <!-- Left Panel -->
+        <StackPanel Grid.Column="0" Margin="10">
+            <TextBlock Text="выбрать функцию:" Margin="0,0,0,5" />
+            <ComboBox x:Name="FunctionComboBox" SelectionChanged="FunctionComboBox_SelectionChanged" Margin="0,0,0,10" />
+
+            <TextBlock Text="Напишите свою функцию:" Margin="0,10,0,5" Width="357" />
+            <TextBox x:Name="CustomFunctionTextBox" Margin="0,0,0,10" IsEnabled="False" />
+
+            <TextBlock Text="X Min:" Margin="0,0,0,5" />
+            <TextBox x:Name="XMinTextBox" Margin="0,0,0,10" Text="-10" />
+
+            <TextBlock Text="X Max:" Margin="0,0,0,5" />
+            <TextBox x:Name="XMaxTextBox" Margin="0,0,0,10" Text="10" />
+
+            <TextBlock Text="Points:" Margin="0,0,0,5" />
+            <TextBox x:Name="PointsTextBox" Margin="0,0,0,10" Text="100" />
+
+            <Button Content="Plot" Click="PlotButton_Click" />
+        </StackPanel>
+
+        <!-- Plot Area -->
+        <oxy:PlotView x:Name="PlotView" Grid.Column="1" Margin="10" />
+
+        <!-- Data Table -->
+        <DataGrid x:Name="FunctionDataGrid" Grid.Column="0" Grid.Row="1" Margin="10" AutoGenerateColumns="True" IsReadOnly="True" />
+    </Grid>
+</Window>

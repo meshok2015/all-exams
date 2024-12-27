@@ -1,0 +1,14 @@
+C:\Users\meshok\source\repos\7-EXAM\bin\Debug\7-EXAM.exe.config
+C:\Users\meshok\source\repos\7-EXAM\bin\Debug\7-EXAM.exe
+C:\Users\meshok\source\repos\7-EXAM\bin\Debug\7-EXAM.pdb
+C:\Users\meshok\source\repos\7-EXAM\obj\Debug\7-EXAM.csproj.AssemblyReference.cache
+C:\Users\meshok\source\repos\7-EXAM\obj\Debug\MainWindow.baml
+C:\Users\meshok\source\repos\7-EXAM\obj\Debug\MainWindow.g.cs
+C:\Users\meshok\source\repos\7-EXAM\obj\Debug\App.g.cs
+C:\Users\meshok\source\repos\7-EXAM\obj\Debug\7-EXAM_MarkupCompile.cache
+C:\Users\meshok\source\repos\7-EXAM\obj\Debug\7-EXAM.g.resources
+C:\Users\meshok\source\repos\7-EXAM\obj\Debug\_7_EXAM.Properties.Resources.resources
+C:\Users\meshok\source\repos\7-EXAM\obj\Debug\7-EXAM.csproj.GenerateResource.cache
+C:\Users\meshok\source\repos\7-EXAM\obj\Debug\7-EXAM.csproj.CoreCompileInputs.cache
+C:\Users\meshok\source\repos\7-EXAM\obj\Debug\7-EXAM.exe
+C:\Users\meshok\source\repos\7-EXAM\obj\Debug\7-EXAM.pdb
